@@ -1,0 +1,78 @@
+<style>
+.container{
+    background-color: aqua;
+}
+.header{
+    background-color: blue;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+.footer{
+    background-color: blueviolet;
+    padding: 10px;
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr;
+}
+.middle{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+}
+.aside{
+    background-color: brown;
+    padding: 10px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.article{
+    background-color: chartreuse;
+    padding: 10px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    height: 200px;
+}
+.imagediv{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+}
+.article p{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.img{
+    display: grid;
+    background-color: chocolate;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+}
+</style>
+<div class="container">
+    <div class="header">
+        <p>Header</p>
+    </div>
+    <div class="middle"> 
+        <div class="aside">
+            <p>aside</p>
+        </div>
+        <div class="article">
+            <p>article</p>
+            <div class="imagediv">
+                <div class="img">image</div>
+                <div class="img">image</div>
+                <div class="img">image</div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">Footer</div>
+</div>
